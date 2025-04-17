@@ -73,25 +73,6 @@ Regulatory frameworks could benefit from such predictive tools to assess novel e
 Liposomal agents like DSPC and stabilizers like Lysine Monohydrate show high potential for peptide drug delivery systems.
 
 
-Limitations
-
-Data constraints: Small dataset size and binary molecular features may reduce generalizability.
-
-Overfitting risk: Particularly with SVR model (extreme predictions).
-
-Feature richness: Morgan fingerprints may miss nuances captured by continuous molecular descriptors.
-
-
-Future Work
-
-Integrate larger, more diverse datasets including novel excipients.
-
-Combine Random Forest with deep learning architectures for hybrid modeling.
-
-Validate predictions against real-world pharmacokinetic data.
-
-Engage regulatory bodies to incorporate ML-based excipient screening into approval pathways.
-
 
 Technologies & Tools
 
@@ -111,6 +92,4 @@ This project is open for academic and non-commercial use. For reproduction or di
 
 
 ---
-
-Let me know if you'd like help formatting the markdown file or setting up your GitHub repository structure (e.g., src/, notebooks/, data/, README.md).
 
