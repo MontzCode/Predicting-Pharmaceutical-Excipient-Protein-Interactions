@@ -22,32 +22,22 @@ Compare model performance across Random Forest (RF), Support Vector Regression (
 Methodology
 
 Data Sources
-
 Bioactivity data: ChEMBL (CHEMBL1784, filtered to 1,331 compounds).
-
 Excipients data: FDA Inactive Ingredient Guide (IIG).
-
 Molecular Representation: SMILES from PubChem API.
 
 
 Preprocessing & Feature Engineering
-
 Cleaned and deduplicated datasets using pandas.
-
 Converted SMILES to Morgan fingerprints (2048-bit) using RDKit.
-
 Implemented caching for SMILES lookups.
 
 
 Modeling Approach
-
-Trained three regressors: Random Forest, SVR, and MLP.
-
-Tuned hyperparameters with RandomizedSearchCV.
-
-Applied 5-fold cross-validation for evaluation.
-
-Assessed models using RMSE, R², and MAE.
+- Trained three regressors: Random Forest, SVR, and MLP.
+- Tuned hyperparameters with RandomizedSearchCV.
+- Applied 5-fold cross-validation for evaluation.
+- Assessed models using RMSE, R², and MAE.
 
 
 Results
@@ -57,37 +47,28 @@ Best Performer: Random Forest — balanced precision and low error.
 Key Predictions:
 
 Lysine Monohydrate (IV) – pChEMBL: 6.91 (RF)
-
 DSPC (injectable liposome former) – pChEMBL: 8.10 (MLP)
-
 Icodextrine (oral) – pChEMBL: 14.41 (SVR, likely overfitted)
-
-
 
 Implications
 
-Computational models can screen excipients for bioactivity, supporting rational formulation design.
+- Computational models can screen excipients for bioactivity, supporting rational formulation design.
 
-Regulatory frameworks could benefit from such predictive tools to assess novel excipients early.
+- Regulatory frameworks could benefit from such predictive tools to assess novel excipients early.
 
-Liposomal agents like DSPC and stabilizers like Lysine Monohydrate show high potential for peptide drug delivery systems.
-
+- Liposomal agents like DSPC and stabilizers like Lysine Monohydrate show high potential for peptide drug delivery systems.
 
 
 Technologies & Tools
-
 Languages & Platforms:
-
 Python 3.11.5, Google Colab
 
 
 Libraries & APIs:
-
 RDKit, pandas, scikit-learn, requests, PubChem API
 
 
 License
-
 This project is open for academic and non-commercial use. For reproduction or distribution, please contact the author.
 
 
